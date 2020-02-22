@@ -1,0 +1,40 @@
+ <xml version="1.0" encoding="UTF-8" standalone="yes" >
+
+
+<!-- 
+ This contains the different prices the top movies have
+
+	Author: Taylor Dean
+MSU Denver login name: Tdean12
+Date Created: 5/11/2018
+Date Due: 5/11/2018
+Modified: 5/11/2018
+Editor:	 Notepad
+-->
+<?xml-stylesheet type="text/css" href="g_styles1.css" media="screen" ?>
+
+<products>
+	
+	<product>
+	
+		<productName>Spirited Away</productName>
+		<price currency="USD">$15.99</price>
+	</product>
+	<product>
+		<productName>My Neighbor Totoro</productName>
+		<price currency="USD">$12.99</price>
+	</product>
+	<product>
+		<productName>KiKi's Delivery Service</productName>
+		<price currency="USD">$13.99</price>
+	</product>
+	<product>
+		<productName>Ponyo</productName>
+		<price currency="USD">$13.99</price>
+	</product>
+	<product>
+		<productName>Princess Mononoke</productName>
+		<price currency="USD">$35.99</price>
+	</product>
+	
+</products>
