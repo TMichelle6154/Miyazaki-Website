@@ -1,0 +1,266 @@
+@charset "utf-8";
+
+/*
+
+   
+   Layout and Typographical Style Sheet for Photo Pages and List at
+   Studio Ghibli Appreciation Pages
+   
+   Filename: g_styles2.css
+   
+     
+Author: Taylor Dean
+MSU Denver login name: Tdean12
+Date Created: 5/11/2018
+Date Due: 5/11/2018
+Modified: 5/11/2018
+Editor:	 Notepad
+
+
+
+*/
+
+html {
+	background: url("Back6.png");
+	background-repeat:no-repeat;
+    background-size:cover;
+    background-color: rgb(32, 22, 150);  
+   color: rgb(61, 72, 150);  
+   font-size: 12px;
+}
+
+
+header {
+	display: block;
+	 padding: 5px 20px;
+   background:rgb(36, 34, 52));
+}
+
+
+
+
+/* Page Body Styles */
+body {
+    background-color: rgb(36, 34, 52);
+   font-family: Verdana, Geneva, Arial, sans-serif; 	
+   margin-left: auto;
+   margin-right: auto;
+   width: 960px;  
+}
+
+/* Body Header Styles */
+
+
+body > header > img {
+
+	width: 40%;
+	display: block;
+	 margin: 30px auto 10px;
+
+}
+
+body > header > h1 {
+
+	font-size: 30px;
+	text-align: right;
+	padding-bottom: 15px;
+	
+}
+
+body article h1 {
+	
+	text-shadow: rgb(181, 211, 181) 2px 2px 1px,
+        rgba(21, 21, 21, 0.66) 5px 5px 25px;
+   font-family: "Times New Roman", Times,  serif;
+   font-weight: normal;
+   font-size: 2.5em;
+   letter-spacing: 0.03em;
+   line-height: 1.2em;
+   margin-bottom: 20px;
+   text-align: center;
+
+}
+
+body article img {
+	width: 60%;
+	display: block;
+	 margin: 30px auto 10px;
+}
+
+body > header > nav#topLinks {
+		background-color: rgb(61, 72, 150);
+	color: white;
+	line-height: 1.7em;
+	text-align: right;
+	padding: 5px 10px 5px 0px;
+}
+
+nav#topLinks a:link, nav#topLinks a:visited {
+	color: white;
+}
+
+nav#topLinks a:hover, nav#topLinks a:active {
+	color: rgb(255, 195, 0);
+}
+
+nav#mainLinks ul li {
+		background-color:rgb(61, 72, 150);	
+	display: block;
+	float: left;
+	text-align: center;
+	width: 20%;	
+}
+
+nav#mainLinks ul li a {
+	color: white;	
+	display: block;
+	height: 2.5em;	
+	text-align: center;
+	line-height: 2.5em;	
+}
+
+nav#mainLinks a:link, nav#mainLinks a:visited {
+	color: white;
+}
+
+nav#mainLinks a:hover, nav#mainLinks a:active {
+	background-color: rgb(255, 195, 0);
+}
+
+
+/* Article  Styles */
+
+article {
+   clear: both;	
+   width: 100%;
+   margin: 10px auto;
+ 
+}
+
+
+article h1 {
+	font-family: Baskerville, "Palatino Linotype", Palatino, 
+	             "Century Schoolbook", "Times New Roman", serif;
+	font-size: 2.5em;
+	padding-top: 20px;
+	color: rgb(98, 160, 82);	
+	text-align: center;	
+	
+}
+
+article p {
+	clear: both;
+
+    margin-bottom: 20px;	
+	text-align: center;
+}
+
+article::after {
+   clear: both;   
+   content: "";
+   display: table;
+}
+
+
+/* Footer Styles */
+footer {
+	background-color: rgb(88, 24, 69);
+	color: white;	
+	font-size: 0.7em;
+	text-align: center;
+	padding: 15px;
+}
+
+
+/* Figure Box Styles */
+
+figure img {
+	display: block;
+	width: 100%;
+	float:center;
+	border: bold white dotted;
+}
+
+figure figcaption {
+	font-size: 0.9em;
+	font-style: italic;
+	font-family: Baskerville, "Palatino Linotype", Palatino, 
+	             "Century Schoolbook", "Times New Roman", serif;
+	margin: 5px 0px;
+	text-align: center;	
+}
+
+figure#figure1, figure#figure2, figure#figure3, figure#figure4, 
+figure#figure5 { 
+	margin: auto;	
+	padding-top: 20px;
+	padding-bottom: 10px;
+	width: 100%;
+}
+
+
+
+/* ===============================
+   Mobile Styles: 0px to 640px 
+   ===============================
+*/
+@media only screen and (max-width: 640px) {
+
+   section#main {
+      width: 100%;
+   }
+   
+   section#right {
+      width: 100%;
+   }
+   
+   a#navicon {
+      display: block;
+   }
+   
+   header nav ul {
+      display: none;
+   }
+   
+   header nav ul li {
+      font-size: 1em;
+      line-height: 1.3em;
+      height: 1.3em;
+   }
+   
+   a#navicon:hover+ul, header nav ul:hover {
+      display: block;
+   }
+}
+
+/* =============================================
+   Tablet and Desktop Styles: greater than 640px
+   =============================================
+*/
+@media only screen and (min-width: 641px) {
+
+   section#main {
+      float: left;
+      width: 60%;
+   }
+   
+   section#right {
+      float: left;
+      width: 40%;
+   }
+   
+   header nav ul {
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-flow: row nowrap;
+      flex-flow: row nowrap;
+      -webkit-justify-content: center;
+      justify-content: center;
+   }
+   
+   header nav ul li {
+      -webkit-flex: 0 1 auto;
+      flex: 0 1 auto;
+   }
+}
+
